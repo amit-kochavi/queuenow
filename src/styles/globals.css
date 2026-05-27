@@ -1,0 +1,246 @@
+:root {
+  --primary-color: #3B82F6;
+  --background-color: #0B0F1A;
+  --card-color: #121826;
+  --text-color: #FFFFFF;
+  --secondary-text: #A1A1AA;
+  --success-color: #22C55E;
+  --warning-color: #FACC15;
+  --error-color: #EF4444;
+  --border-radius: 16px;
+  --spacing-unit: 8px;
+
+  font-family: Inter, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Inter, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 18px;
+  background: var(--card-color);
+  border-bottom: 1px solid #1F2937;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+h1 {
+  padding: 30px;
+  font-size: 42px;
+  color: var(--text-color);
+}
+.page {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  border: none;
+  background: #1F2937;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.recommendation-card,
+.place-card {
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 18px;
+  border: 1px solid #1F2937;
+}
+
+.places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.place-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.low {
+  color: var(--success-color);
+}
+
+.medium {
+  color: var(--warning-color);
+}
+
+.high {
+  color: var(--error-color);
+}
+.subtitle {
+  color: var(--secondary-text);
+  margin-top: -20px;
+  margin-bottom: 24px;
+}
+
+.status-card,
+.graph-card {
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 18px;
+  border: 1px solid #1F2937;
+}
+
+.status-card h2 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.bar-chart {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.bar-chart div {
+  flex: 1;
+  height: 50%;
+  background: #2563EB;
+  border-radius: 8px 8px 0 0;
+}
+
+.bar-chart div:nth-child(2) {
+  height: 70%;
+}
+
+.bar-chart div:nth-child(4) {
+  height: 60%;
+}
+
+.bar-chart div:nth-child(5) {
+  height: 40%;
+}
+
+.bar-chart .active {
+  height: 95%;
+  background: #F59E0B;
+}
+
+.action-row {
+  display: flex;
+  gap: 12px;
+}
+
+.action-row button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 700;
+}
+
+.secondary-button {
+  background: #1F2937 !important;
+}
+.form-card {
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  border: 1px solid #1F2937;
+}
+
+.selector-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.selector-row button,
+.submit-button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 14px;
+  background: #1F2937;
+  color: white;
+  font-weight: 700;
+}
+
+.selector-row .selected,
+.submit-button {
+  background: var(--primary-color);
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  border: none;
+  background: #1F2937;
+  color: white;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+.navbar a.active {
+  color: var(--primary-color);
+}
+.clickable-card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clickable-card:hover {
+  transform: scale(1.02);
+}
+.line-graph {
+  height: 140px;
+  margin-top: 20px;
+  border-radius: var(--border-radius);
+  background:
+    radial-gradient(circle at 10% 80%, #3B82F6 0%, transparent 20%),
+    radial-gradient(circle at 30% 60%, #2563EB 0%, transparent 20%),
+    radial-gradient(circle at 50% 40%, #0EA5E9 0%, transparent 20%),
+    radial-gradient(circle at 70% 55%, #3B82F6 0%, transparent 20%),
+    radial-gradient(circle at 90% 75%, #2563EB 0%, transparent 20%);
+  background-color: #111827;
+}
+
+.recommendation-card h2 {
+  line-height: 1.4;
+}
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--secondary-text);
+  font-size: 14px;
+}
