@@ -1,4 +1,7 @@
 # QueueNow
+## Application Preview
+
+![QueueNow Home Page](home-page.png)
 
 ## Overview
 
