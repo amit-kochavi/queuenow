@@ -70,3 +70,8 @@ https://queuenow-omega.vercel.app
 npm install
 npm run dev
 ```
+## Database ERD
+
+The following ERD represents the planned database structure for QueueNow.
+
+![QueueNow ERD](erd.png)
