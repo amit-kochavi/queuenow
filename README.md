@@ -75,3 +75,15 @@ npm run dev
 The following ERD represents the planned database structure for QueueNow.
 
 ![QueueNow ERD](erd.png)
+
+## External Services and Integrations
+
+| Service | Type | Purpose |
+| --- | --- | --- |
+| Vercel | Hosting / Deployment | Hosts the live QueueNow application and enables online access to the project. |
+| GitHub | Source Control | Stores and manages the project source code and version history. |
+| AI Recommendation Module (Conceptual) | AI Feature | Demonstrates smart recommendations and suggested visiting times using demo data. |
+| Google Maps API (Planned) | Maps / Location API | Planned for future versions to support location-based place discovery and navigation. |
+| Supabase (Planned) | Backend / Database / Authentication | Planned for future development to manage real-time data, user authentication, and queue reports. |
+
+QueueNow was developed as a frontend MVP (Minimum Viable Product) using demo data. The current version demonstrates the main user flow and core concept of the application. Backend services and external API integrations are planned for future development.
