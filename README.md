@@ -1,4 +1,5 @@
 # QueueNow
+
 ## Application Preview
 
 ![QueueNow Home Page](home-page.png)
@@ -17,10 +18,10 @@ QueueNow helps users make better decisions by providing wait-time estimates, cro
 
 QueueNow is designed for:
 
-- Students
-- Office workers
-- Shoppers
-- Anyone who wants to avoid long waiting times
+* Students
+* Office workers
+* Shoppers
+* Anyone who wants to avoid long waiting times
 
 Users can quickly check crowd levels before visiting a location and receive recommendations for better visiting times.
 
@@ -28,19 +29,20 @@ Users can quickly check crowd levels before visiting a location and receive reco
 
 ### Existing Solutions
 
-- Google Maps
-- Waze
-- Business-specific queue applications
-- Phone calls to businesses
-- Manual checking and personal experience
+* Google Maps
+* Waze
+* Business-specific queue applications
+* Phone calls to businesses
+* Manual checking and personal experience
 
 ### QueueNow Advantages
 
-- Focused specifically on queue and crowd management.
-- Simple and user-friendly interface.
-- Community-based crowd reports.
-- AI-powered predictions and recommendations.
-- Quick access to nearby locations and estimated wait times.
+* Focused specifically on queue and crowd management.
+* Simple and user-friendly interface.
+* Community-based crowd reports.
+* AI-powered predictions and recommendations.
+* Quick access to nearby locations and estimated wait times.
+* Cloud database storage for submitted queue reports.
 
 ## Live Demo
 
@@ -48,21 +50,25 @@ https://queuenow-omega.vercel.app
 
 ## Features
 
-- View nearby places
-- Check estimated wait times
-- View place details
-- Submit crowd reports
-- AI Tips and recommendations
-- Responsive React interface
+* View nearby places
+* Check estimated wait times
+* View place details
+* Submit crowd reports
+* Store queue reports in Supabase
+* Display latest reports on the home page
+* AI Tips and recommendations
+* Responsive React interface
 
 ## Technologies Used
 
-- React
-- Vite
-- React Router
-- JavaScript
-- CSS
-- Vercel
+* React
+* Vite
+* React Router
+* JavaScript
+* CSS
+* Supabase
+* GitHub
+* Vercel
 
 ## Run Locally
 
@@ -70,20 +76,34 @@ https://queuenow-omega.vercel.app
 npm install
 npm run dev
 ```
+
 ## Database ERD
 
-The following ERD represents the planned database structure for QueueNow.
+The following ERD represents the full database design of QueueNow, including users, places, queue reports, and AI recommendations.
 
 ![QueueNow ERD](erd.png)
 
 ## External Services and Integrations
 
-| Service | Type | Purpose |
-| --- | --- | --- |
-| Vercel | Hosting / Deployment | Hosts the live QueueNow application and enables online access to the project. |
-| GitHub | Source Control | Stores and manages the project source code and version history. |
-| AI Recommendation Feature (Conceptual) | AI Feature | Demonstrates smart recommendations and suggested visiting times using demo data. |
-| Google Maps API (Planned) | Maps / Location API | Planned for future versions to support location-based place discovery and navigation. |
-| Supabase (Planned) | Backend / Database / Authentication | Planned for future development to manage real-time data, user authentication, and queue reports. |
+| Service                   | Type                 | Purpose                                                                               |
+| ------------------------- | -------------------- | ------------------------------------------------------------------------------------- |
+| Vercel                    | Hosting / Deployment | Hosts the live QueueNow application and enables online access to the project.         |
+| GitHub                    | Source Control       | Stores and manages the project source code and version history.                       |
+| Supabase                  | Backend / Database   | Stores queue reports and provides cloud database functionality for the application.   |
+| AI Recommendation Feature | AI Feature           | Demonstrates smart recommendations and suggested visiting times using demo data.      |
+| Google Maps API (Planned) | Maps / Location API  | Planned for future versions to support location-based place discovery and navigation. |
 
-QueueNow was developed as a frontend MVP (Minimum Viable Product) using demo data. The current version demonstrates the main user flow and core concept of the application. Backend services and external API integrations are planned for future development.
+## Current Project Status
+
+QueueNow was developed as a working MVP (Minimum Viable Product) using React and Supabase.
+
+The application demonstrates the complete user flow, including:
+
+* Viewing nearby places and estimated wait times
+* Exploring place details
+* Submitting crowd and queue reports
+* Storing reports in a cloud database using Supabase
+* Displaying the latest reports on the home page
+* Viewing AI-powered tips and recommendations
+
+The current version successfully combines a modern React frontend with a cloud-based backend solution. Future development may include user authentication, Google Maps integration, real-time updates, personalized recommendations, and advanced AI prediction capabilities.
