@@ -1,16 +1,69 @@
-# React + Vite
+# QueueNow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+QueueNow is a web application that helps users check real-time wait times and crowd levels at nearby places. The platform also provides AI-powered recommendations and predictions to help users choose the best time to visit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Problem Statement
 
-## React Compiler
+People often waste time waiting in long lines at coffee shops, restaurants, service centers, and other busy locations. Existing solutions usually provide limited or outdated information about crowd levels.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+QueueNow helps users make better decisions by providing wait-time estimates, crowd reports, and AI-based insights for predicting less busy times.
 
-## Expanding the ESLint configuration
+## Target Audience
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+QueueNow is designed for:
+
+- Students
+- Office workers
+- Shoppers
+- Anyone who wants to avoid long waiting times
+
+Users can quickly check crowd levels before visiting a location and receive recommendations for better visiting times.
+
+## Competitors and Differentiation
+
+### Existing Solutions
+
+- Google Maps
+- Waze
+- Business-specific queue applications
+- Phone calls to businesses
+- Manual checking and personal experience
+
+### QueueNow Advantages
+
+- Focused specifically on queue and crowd management.
+- Simple and user-friendly interface.
+- Community-based crowd reports.
+- AI-powered predictions and recommendations.
+- Quick access to nearby locations and estimated wait times.
+
+## Live Demo
+
+https://queuenow-omega.vercel.app
+
+## Features
+
+- View nearby places
+- Check estimated wait times
+- View place details
+- Submit crowd reports
+- AI Tips and recommendations
+- Responsive React interface
+
+## Technologies Used
+
+- React
+- Vite
+- React Router
+- JavaScript
+- CSS
+- Vercel
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
