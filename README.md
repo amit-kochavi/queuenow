@@ -82,7 +82,7 @@ The following ERD represents the planned database structure for QueueNow.
 | --- | --- | --- |
 | Vercel | Hosting / Deployment | Hosts the live QueueNow application and enables online access to the project. |
 | GitHub | Source Control | Stores and manages the project source code and version history. |
-| AI Recommendation Module (Conceptual) | AI Feature | Demonstrates smart recommendations and suggested visiting times using demo data. |
+| AI Recommendation Feature (Conceptual) | AI Feature | Demonstrates smart recommendations and suggested visiting times using demo data. |
 | Google Maps API (Planned) | Maps / Location API | Planned for future versions to support location-based place discovery and navigation. |
 | Supabase (Planned) | Backend / Database / Authentication | Planned for future development to manage real-time data, user authentication, and queue reports. |
 
